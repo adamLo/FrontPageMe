@@ -8,20 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		191DF9001F1606460061A68D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191DF8FF1F1606460061A68D /* AppDelegate.swift */; };
-		191DF9021F1606460061A68D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191DF9011F1606460061A68D /* ViewController.swift */; };
 		191DF9051F1606460061A68D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191DF9031F1606460061A68D /* Main.storyboard */; };
 		191DF9071F1606460061A68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191DF9061F1606460061A68D /* Assets.xcassets */; };
 		191DF90A1F1606460061A68D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191DF9081F1606460061A68D /* LaunchScreen.storyboard */; };
+		196DFBF51F168CFB0077F2ED /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DFBF41F168CFB0077F2ED /* CameraViewController.swift */; };
+		196DFBF71F168EC30077F2ED /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DFBF61F168EC30077F2ED /* UIImage.swift */; };
+		196DFBF91F1690130077F2ED /* ErrorDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DFBF81F1690130077F2ED /* ErrorDialog.swift */; };
+		196DFBFB1F16933B0077F2ED /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DFBFA1F16933B0077F2ED /* ComposeViewController.swift */; };
+		196DFC091F16A2E20077F2ED /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFBFE1F16A2E20077F2ED /* OpenSans-Bold.ttf */; };
+		196DFC0A1F16A2E20077F2ED /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFBFF1F16A2E20077F2ED /* OpenSans-BoldItalic.ttf */; };
+		196DFC0B1F16A2E20077F2ED /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFC001F16A2E20077F2ED /* OpenSans-ExtraBold.ttf */; };
+		196DFC0C1F16A2E20077F2ED /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFC011F16A2E20077F2ED /* OpenSans-ExtraBoldItalic.ttf */; };
+		196DFC0D1F16A2E20077F2ED /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFC021F16A2E20077F2ED /* OpenSans-Italic.ttf */; };
+		196DFC0E1F16A2E20077F2ED /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFC031F16A2E20077F2ED /* OpenSans-Light.ttf */; };
+		196DFC0F1F16A2E20077F2ED /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFC041F16A2E20077F2ED /* OpenSans-LightItalic.ttf */; };
+		196DFC101F16A2E20077F2ED /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFC051F16A2E20077F2ED /* OpenSans-Regular.ttf */; };
+		196DFC111F16A2E20077F2ED /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFC061F16A2E20077F2ED /* OpenSans-Semibold.ttf */; };
+		196DFC121F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFC071F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf */; };
+		196DFC141F16A38A0077F2ED /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DFC131F16A38A0077F2ED /* UIFont.swift */; };
+		19E05A1B1F16B0B30041061C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E05A1A1F16B0B30041061C /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		191DF8FC1F1606460061A68D /* FrontPageMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrontPageMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		191DF8FF1F1606460061A68D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		191DF9011F1606460061A68D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		191DF9041F1606460061A68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		191DF9061F1606460061A68D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		191DF9091F1606460061A68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		191DF90B1F1606460061A68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		196DFBF41F168CFB0077F2ED /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		196DFBF61F168EC30077F2ED /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		196DFBF81F1690130077F2ED /* ErrorDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorDialog.swift; sourceTree = "<group>"; };
+		196DFBFA1F16933B0077F2ED /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		196DFBFE1F16A2E20077F2ED /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		196DFBFF1F16A2E20077F2ED /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		196DFC001F16A2E20077F2ED /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		196DFC011F16A2E20077F2ED /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		196DFC021F16A2E20077F2ED /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		196DFC031F16A2E20077F2ED /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		196DFC041F16A2E20077F2ED /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		196DFC051F16A2E20077F2ED /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		196DFC061F16A2E20077F2ED /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		196DFC071F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		196DFC131F16A38A0077F2ED /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		19E05A1A1F16B0B30041061C /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +84,37 @@
 		191DF8FE1F1606460061A68D /* FrontPageMe */ = {
 			isa = PBXGroup;
 			children = (
+				196DFBFC1F16A2E20077F2ED /* open-sans */,
 				191DF8FF1F1606460061A68D /* AppDelegate.swift */,
-				191DF9011F1606460061A68D /* ViewController.swift */,
 				191DF9031F1606460061A68D /* Main.storyboard */,
 				191DF9061F1606460061A68D /* Assets.xcassets */,
 				191DF9081F1606460061A68D /* LaunchScreen.storyboard */,
 				191DF90B1F1606460061A68D /* Info.plist */,
+				196DFBF41F168CFB0077F2ED /* CameraViewController.swift */,
+				196DFBF61F168EC30077F2ED /* UIImage.swift */,
+				196DFBF81F1690130077F2ED /* ErrorDialog.swift */,
+				196DFC131F16A38A0077F2ED /* UIFont.swift */,
+				196DFBFA1F16933B0077F2ED /* ComposeViewController.swift */,
+				19E05A1A1F16B0B30041061C /* UIView.swift */,
 			);
 			path = FrontPageMe;
+			sourceTree = "<group>";
+		};
+		196DFBFC1F16A2E20077F2ED /* open-sans */ = {
+			isa = PBXGroup;
+			children = (
+				196DFBFE1F16A2E20077F2ED /* OpenSans-Bold.ttf */,
+				196DFBFF1F16A2E20077F2ED /* OpenSans-BoldItalic.ttf */,
+				196DFC001F16A2E20077F2ED /* OpenSans-ExtraBold.ttf */,
+				196DFC011F16A2E20077F2ED /* OpenSans-ExtraBoldItalic.ttf */,
+				196DFC021F16A2E20077F2ED /* OpenSans-Italic.ttf */,
+				196DFC031F16A2E20077F2ED /* OpenSans-Light.ttf */,
+				196DFC041F16A2E20077F2ED /* OpenSans-LightItalic.ttf */,
+				196DFC051F16A2E20077F2ED /* OpenSans-Regular.ttf */,
+				196DFC061F16A2E20077F2ED /* OpenSans-Semibold.ttf */,
+				196DFC071F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf */,
+			);
+			path = "open-sans";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +177,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196DFC0D1F16A2E20077F2ED /* OpenSans-Italic.ttf in Resources */,
+				196DFC0A1F16A2E20077F2ED /* OpenSans-BoldItalic.ttf in Resources */,
 				191DF90A1F1606460061A68D /* LaunchScreen.storyboard in Resources */,
+				196DFC111F16A2E20077F2ED /* OpenSans-Semibold.ttf in Resources */,
+				196DFC0B1F16A2E20077F2ED /* OpenSans-ExtraBold.ttf in Resources */,
+				196DFC0F1F16A2E20077F2ED /* OpenSans-LightItalic.ttf in Resources */,
 				191DF9071F1606460061A68D /* Assets.xcassets in Resources */,
+				196DFC091F16A2E20077F2ED /* OpenSans-Bold.ttf in Resources */,
 				191DF9051F1606460061A68D /* Main.storyboard in Resources */,
+				196DFC121F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf in Resources */,
+				196DFC0E1F16A2E20077F2ED /* OpenSans-Light.ttf in Resources */,
+				196DFC101F16A2E20077F2ED /* OpenSans-Regular.ttf in Resources */,
+				196DFC0C1F16A2E20077F2ED /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				191DF9021F1606460061A68D /* ViewController.swift in Sources */,
+				196DFBFB1F16933B0077F2ED /* ComposeViewController.swift in Sources */,
+				196DFBF71F168EC30077F2ED /* UIImage.swift in Sources */,
+				196DFC141F16A38A0077F2ED /* UIFont.swift in Sources */,
+				19E05A1B1F16B0B30041061C /* UIView.swift in Sources */,
 				191DF9001F1606460061A68D /* AppDelegate.swift in Sources */,
+				196DFBF91F1690130077F2ED /* ErrorDialog.swift in Sources */,
+				196DFBF51F168CFB0077F2ED /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E8M3W83BER;
 				INFOPLIST_FILE = FrontPageMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.decos.FrontPageMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E8M3W83BER;
 				INFOPLIST_FILE = FrontPageMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.decos.FrontPageMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +374,7 @@
 				191DF9101F1606460061A68D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
