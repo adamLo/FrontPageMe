@@ -95,8 +95,19 @@ class ComposeViewController: UIViewController {
         let faceImage = originalPhoto.fixOrientation()//.masked(with: UIImage(named: "photo-mask")!)
         faceImageView.image = faceImage
         
-        faceImageTop.constant = 80
-        faceImageLead.constant = 120
+        var topConstant: CGFloat = 80
+        var leftConstant: CGFloat = 120
+        
+        if originalPhoto.size.width == 480.0 && originalPhoto.size.height == 640.0 {
+            
+            topConstant = 520
+            leftConstant = 330
+            
+            faceImageView.transform = faceImageView.transform.scaledBy(x: 1.6, y: 1.6)
+        }
+        
+        faceImageTop.constant = topConstant
+        faceImageLead.constant = leftConstant
         
         view.layoutIfNeeded()
     }

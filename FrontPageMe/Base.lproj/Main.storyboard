@@ -14,7 +14,7 @@
         <scene sceneID="Nh0-kx-fCk">
             <objects>
                 <navigationController id="zOU-6R-0mt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qFS-hW-txF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qFS-hW-txF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -132,8 +132,8 @@
                                     <action selector="titleDidEndOnExit:" destination="3S7-sM-uQy" eventType="editingDidEndOnExit" id="0wF-Vv-tLY"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can drag, pinch and rotate the photo to adjust!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVY-BI-Cop" userLabel="Photo hint">
-                                <rect key="frame" x="70" y="620" width="258" height="167.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can drag, pinch and rotate the photo to adjust!" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVY-BI-Cop" userLabel="Photo hint">
+                                <rect key="frame" x="80" y="570" width="248" height="167.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -172,12 +172,12 @@
                             <constraint firstItem="Ymb-xa-MDP" firstAttribute="top" secondItem="l1u-0G-sjn" secondAttribute="top" id="EeA-LT-8Px"/>
                             <constraint firstItem="wDa-jZ-jFm" firstAttribute="trailing" secondItem="l1u-0G-sjn" secondAttribute="trailing" id="GJJ-Qs-ZEm"/>
                             <constraint firstItem="nTh-8W-Aot" firstAttribute="top" relation="greaterThanOrEqual" secondItem="l1u-0G-sjn" secondAttribute="bottom" constant="500" id="MQF-iq-Xsp"/>
-                            <constraint firstItem="RVY-BI-Cop" firstAttribute="top" secondItem="P9p-Aq-XHO" secondAttribute="bottom" constant="600" id="Saw-bG-8bA"/>
+                            <constraint firstItem="RVY-BI-Cop" firstAttribute="top" secondItem="P9p-Aq-XHO" secondAttribute="bottom" constant="550" id="Saw-bG-8bA"/>
                             <constraint firstItem="Ymb-xa-MDP" firstAttribute="leading" secondItem="l1u-0G-sjn" secondAttribute="leading" id="UY9-AP-qkb"/>
                             <constraint firstItem="LuI-bF-5UB" firstAttribute="top" secondItem="P9p-Aq-XHO" secondAttribute="bottom" id="UZI-J2-sOW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RVY-BI-Cop" secondAttribute="trailing" constant="420" id="Yj4-bS-PAF"/>
                             <constraint firstAttribute="trailing" secondItem="LuI-bF-5UB" secondAttribute="trailing" id="bHj-KX-M4Q"/>
-                            <constraint firstItem="RVY-BI-Cop" firstAttribute="leading" secondItem="OUo-xY-7LF" secondAttribute="leading" constant="70" id="dlU-g9-mft"/>
+                            <constraint firstItem="RVY-BI-Cop" firstAttribute="leading" secondItem="OUo-xY-7LF" secondAttribute="leading" constant="80" id="dlU-g9-mft"/>
                             <constraint firstItem="48f-rJ-Dqb" firstAttribute="top" secondItem="P9p-Aq-XHO" secondAttribute="bottom" id="eAY-BV-WRy"/>
                             <constraint firstItem="nTh-8W-Aot" firstAttribute="top" secondItem="wDa-jZ-jFm" secondAttribute="bottom" constant="500" id="k9z-Bu-qvF"/>
                             <constraint firstItem="l1u-0G-sjn" firstAttribute="leading" secondItem="OUo-xY-7LF" secondAttribute="leading" constant="50" id="kAn-3T-7tU"/>
@@ -230,6 +230,6 @@
     <resources>
         <image name="button-shoot" width="150" height="150"/>
         <image name="camera-mask" width="767" height="1024"/>
-        <image name="finalpage" width="767" height="1024"/>
+        <image name="finalpage" width="768" height="1024"/>
     </resources>
 </document>
