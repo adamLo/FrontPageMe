@@ -16,8 +16,8 @@ class ComposeViewController: UIViewController {
     @IBOutlet weak var titleTouchArea: UIView!
 
     @IBOutlet weak var faceImageView: UIImageView!
-    @IBOutlet weak var faceImageTop: NSLayoutConstraint!
-    @IBOutlet weak var faceImageLead: NSLayoutConstraint!
+    @IBOutlet weak var faceImageCenterX: NSLayoutConstraint!
+    @IBOutlet weak var faceImageCenterY: NSLayoutConstraint!
     
     @IBOutlet weak var photoHintLabel: UILabel!
     
@@ -64,9 +64,10 @@ class ComposeViewController: UIViewController {
     
     private func setupButtons() {
         
+        let buttonColor = UIColor(red: 10/255.0, green: 165/255.0, blue: 195/255.0, alpha: 1.0)
         for button in [restartButton, finishedButton] {
         
-            button!.backgroundColor = UIColor.red
+            button!.backgroundColor = buttonColor
             button!.setTitleColor(UIColor.white, for: .normal)
             button!.titleLabel!.font = UIFont.defaultFont(style: .bold, size: 35)
         }
@@ -95,19 +96,19 @@ class ComposeViewController: UIViewController {
         let faceImage = originalPhoto.fixOrientation()//.masked(with: UIImage(named: "photo-mask")!)
         faceImageView.image = faceImage
         
-        var topConstant: CGFloat = 80
-        var leftConstant: CGFloat = 120
+//        var topConstant: CGFloat = 80
+//        var leftConstant: CGFloat = 120
         
         if originalPhoto.size.width == 480.0 && originalPhoto.size.height == 640.0 {
             
-            topConstant = 520
-            leftConstant = 330
+//            topConstant = 520
+//            leftConstant = 330
             
             faceImageView.transform = faceImageView.transform.scaledBy(x: 1.6, y: 1.6)
         }
         
-        faceImageTop.constant = topConstant
-        faceImageLead.constant = leftConstant
+//        faceImageTop.constant = topConstant
+//        faceImageLead.constant = leftConstant
         
         view.layoutIfNeeded()
     }
@@ -133,8 +134,8 @@ class ComposeViewController: UIViewController {
         
         let translation = sender.translation(in: self.view)
         
-        faceImageTop.constant += translation.y
-        faceImageLead.constant += translation.x
+        faceImageCenterY.constant += translation.y
+        faceImageCenterX.constant += translation.x
         view.layoutIfNeeded()
         sender.setTranslation(CGPoint.zero, in: self.view)
     }
