@@ -64,7 +64,7 @@ class ComposeViewController: UIViewController {
     
     private func setupButtons() {
         
-        let buttonColor = UIColor(red: 10/255.0, green: 165/255.0, blue: 195/255.0, alpha: 1.0)
+        let buttonColor = UIColor.decosCyan
         for button in [restartButton, finishedButton] {
         
             button!.backgroundColor = buttonColor

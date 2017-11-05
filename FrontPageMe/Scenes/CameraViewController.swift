@@ -32,6 +32,20 @@ class CameraViewController: UIViewController {
         UIApplication.shared.isStatusBarHidden = true
         navigationController?.isNavigationBarHidden = true
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        
+        startTimer()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+        
+        stopTimer()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -68,7 +82,7 @@ class CameraViewController: UIViewController {
     
     private func setupCameraOverlay() {
         
-        captureSession.sessionPreset = AVCaptureSessionPresetHigh
+        captureSession.sessionPreset = AVCaptureSession.Preset.high
         
         shootButton.isEnabled = false
         
@@ -76,7 +90,7 @@ class CameraViewController: UIViewController {
             // Loop through all the capture devices on this phone
             for device in devices {
                 // Make sure this particular device supports video
-                if device.hasMediaType(AVMediaTypeVideo) {
+                if device.hasMediaType(AVMediaType.video) {
                     // Finally check the position and confirm we've got the back camera
                     if device.position == .back {
                         mainCamera = device
@@ -112,10 +126,10 @@ class CameraViewController: UIViewController {
         
         do {
             let added = captureSession.inputs.contains(where: { (device) -> Bool in
-                return device as? AVCaptureDevice === currentDevice
+                return device as? AVCaptureDeviceInput === currentDevice
             })
             if !added {
-                try captureSession.addInput(AVCaptureDeviceInput(device: currentDevice))
+                try captureSession.addInput(AVCaptureDeviceInput(device: currentDevice!))
             }
             stillImageOutput.outputSettings = [AVVideoCodecKey:AVVideoCodecJPEG]
             
@@ -132,11 +146,13 @@ class CameraViewController: UIViewController {
             return
         }
         
-        if let layer = AVCaptureVideoPreviewLayer(session: captureSession) {
+        let layer = AVCaptureVideoPreviewLayer(session: captureSession)
+        
+        if layer != nil {
             
             previewLayer = layer
             
-            previewLayer!.videoGravity = AVLayerVideoGravityResizeAspectFill;
+            previewLayer!.videoGravity = AVLayerVideoGravity.resizeAspectFill;
             
             self.view.layer.insertSublayer(previewLayer!, at: 0)
             previewLayer!.needsDisplayOnBoundsChange = true
@@ -164,11 +180,13 @@ class CameraViewController: UIViewController {
 
     func takePhoto() {
         
-        if let videoConnection = stillImageOutput.connection(withMediaType: AVMediaTypeVideo) {
+        if let videoConnection = stillImageOutput.connection(with: AVMediaType.video) {
+            
+            stopTimer()
             
             stillImageOutput.captureStillImageAsynchronously(from: videoConnection, completionHandler: { (CMSampleBuffer, error) in
                 
-                if let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(CMSampleBuffer) {
+                if let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(CMSampleBuffer!) {
                     
                     if let cameraImage = UIImage(data: imageData) {
                         
@@ -180,7 +198,9 @@ class CameraViewController: UIViewController {
                     else {
                         DispatchQueue.main.async(execute: {
                         
-                            UIAlertController.showError(from: self, message: "Cannot decoide image:(", dismissedBlock: nil)
+                            UIAlertController.showError(from: self, message: "Cannot decode image:(", dismissedBlock: nil)
+                            
+                            self.startTimer()
                         })
                     }
                 }
@@ -188,9 +208,44 @@ class CameraViewController: UIViewController {
                     DispatchQueue.main.async(execute: {
                     
                         UIAlertController.showError(from: self, message: "Error capturing image", dismissedBlock: nil)
+                        
+                        self.startTimer()
                     })
                 }
             })
         }
+    }
+    @IBAction func backButtonTouched(_ sender: Any) {
+        
+        stopTimer()
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    // MARK: - Timer
+    
+    private var backTimer: Timer?
+    private let backTimeout: TimeInterval = 5 * 60
+    
+    private func startTimer() {
+        
+        stopTimer()
+        
+        backTimer = Timer.scheduledTimer(timeInterval: backTimeout, target: self, selector: #selector(backTimerFired(timer:)), userInfo: nil, repeats: false)
+    }
+    
+    private func stopTimer() {
+        
+        if backTimer != nil {
+            
+            backTimer!.invalidate()
+            
+            backTimer = nil
+        }
+    }
+    
+    @objc func backTimerFired(timer: Timer) {
+        
+        stopTimer()
+        navigationController?.popToRootViewController(animated: true)
     }
 }
