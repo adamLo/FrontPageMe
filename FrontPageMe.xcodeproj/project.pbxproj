@@ -60,6 +60,7 @@
 		19E6498E1FAF685100DF85A7 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		19E6498F1FAF685200DF85A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		19E649911FAF69D500DF85A7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		19E649931FAF797300DF85A7 /* FrontPageMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FrontPageMe.entitlements; sourceTree = "<group>"; };
 		4728F74868F5C67F6197E78C /* Pods-FrontPageMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontPageMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrontPageMe/Pods-FrontPageMe.debug.xcconfig"; sourceTree = "<group>"; };
 		55710E29213F7FECF89E029C /* Pods_FrontPageMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrontPageMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		673E399E657F58AE5A46B212 /* Pods-FrontPageMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontPageMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrontPageMe/Pods-FrontPageMe.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		191DF8FE1F1606460061A68D /* FrontPageMe */ = {
 			isa = PBXGroup;
 			children = (
+				19E649931FAF797300DF85A7 /* FrontPageMe.entitlements */,
 				19E649891FAF632F00DF85A7 /* Scenes */,
 				19E649881FAF630500DF85A7 /* Extensions */,
 				19E649871FAF62EA00DF85A7 /* Storyboards */,
@@ -222,6 +224,11 @@
 						DevelopmentTeam = E8M3W83BER;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -494,6 +501,7 @@
 			baseConfigurationReference = 4728F74868F5C67F6197E78C /* Pods-FrontPageMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FrontPageMe/FrontPageMe.entitlements;
 				DEVELOPMENT_TEAM = E8M3W83BER;
 				INFOPLIST_FILE = FrontPageMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -510,6 +518,7 @@
 			baseConfigurationReference = 673E399E657F58AE5A46B212 /* Pods-FrontPageMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FrontPageMe/FrontPageMe.entitlements;
 				DEVELOPMENT_TEAM = E8M3W83BER;
 				INFOPLIST_FILE = FrontPageMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
