@@ -55,7 +55,7 @@ class ComposeViewController: UIViewController {
         titleLabel.text = NSLocalizedString("Touch here to add your title!", comment: "Title label default text")
         titleLabel.isHidden = false
         
-        titleTextField.placeholder = NSLocalizedString("Add your comment!", comment: "Title editn placeholder")
+        titleTextField.placeholder = NSLocalizedString("Add your comment!", comment: "Title edit placeholder")
         titleTextField.isHidden = true
         titleTextField.font = UIFont.defaultFont(style: .regular, size: 20)
         
@@ -192,7 +192,7 @@ class ComposeViewController: UIViewController {
                 
                 if success {
                     
-                    UIAlertController.showOK(from: self, message: "Photo saved! Thank you!", dismissedBlock: {
+                    UIAlertController.showOK(from: self, message: NSLocalizedString("Photo saved! Thank you!", comment: "Success message title when saved photo"), dismissedBlock: {
                         
                         self.navigationController?.popToRootViewController(animated: true)
                     })

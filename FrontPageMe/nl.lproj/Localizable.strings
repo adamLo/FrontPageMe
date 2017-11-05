@@ -3,3 +3,18 @@
 
 /* Start screen message */
 "start_message" = "JOIN wordt de meest gebruiks-vriendelijke portaal voor alle inwoners van Nederland? Zelfs je schoon moeder is gebruiker en fan van JOIN? Deel je ideeën en maak je eigen TIME cover.";
+
+/* Title label default text */
+"Touch here to add your title!" = "Tik hier om je titel toe te voegen!";
+
+/* Title edit placeholder */
+"Add your comment!" = "Voeg je commentaar toe!";
+
+/* Start over button title */
+"START OVER" = "BEGIN OPNIEUW";
+
+/* Finished button title */
+"FINISHED" = "KLAAR";
+
+/* Success message title when saved photo */
+"Photo saved! Thank you!" = "Foto opgeslagen! Dank je!";
