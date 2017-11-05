@@ -27,6 +27,7 @@
 		196DFC121F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFC071F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf */; };
 		196DFC141F16A38A0077F2ED /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DFC131F16A38A0077F2ED /* UIFont.swift */; };
 		19E05A1B1F16B0B30041061C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E05A1A1F16B0B30041061C /* UIView.swift */; };
+		A7D7785B1C495FBAB952D4CD /* Pods_FrontPageMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55710E29213F7FECF89E029C /* Pods_FrontPageMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,9 @@
 		196DFC071F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		196DFC131F16A38A0077F2ED /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		19E05A1A1F16B0B30041061C /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		4728F74868F5C67F6197E78C /* Pods-FrontPageMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontPageMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrontPageMe/Pods-FrontPageMe.debug.xcconfig"; sourceTree = "<group>"; };
+		55710E29213F7FECF89E029C /* Pods_FrontPageMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrontPageMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		673E399E657F58AE5A46B212 /* Pods-FrontPageMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontPageMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrontPageMe/Pods-FrontPageMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D7785B1C495FBAB952D4CD /* Pods_FrontPageMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +75,8 @@
 			children = (
 				191DF8FE1F1606460061A68D /* FrontPageMe */,
 				191DF8FD1F1606460061A68D /* Products */,
+				4B21A9D6E20EDED0BE1DEBC1 /* Pods */,
+				AA1EFE1F8C0CD8338F4A7739 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,18 +91,12 @@
 		191DF8FE1F1606460061A68D /* FrontPageMe */ = {
 			isa = PBXGroup;
 			children = (
-				196DFBFC1F16A2E20077F2ED /* open-sans */,
+				19E649891FAF632F00DF85A7 /* Scenes */,
+				19E649881FAF630500DF85A7 /* Extensions */,
+				19E649871FAF62EA00DF85A7 /* Storyboards */,
+				19E649861FAF62D300DF85A7 /* Assets */,
 				191DF8FF1F1606460061A68D /* AppDelegate.swift */,
-				191DF9031F1606460061A68D /* Main.storyboard */,
-				191DF9061F1606460061A68D /* Assets.xcassets */,
-				191DF9081F1606460061A68D /* LaunchScreen.storyboard */,
 				191DF90B1F1606460061A68D /* Info.plist */,
-				196DFBF41F168CFB0077F2ED /* CameraViewController.swift */,
-				196DFBF61F168EC30077F2ED /* UIImage.swift */,
-				196DFBF81F1690130077F2ED /* ErrorDialog.swift */,
-				196DFC131F16A38A0077F2ED /* UIFont.swift */,
-				196DFBFA1F16933B0077F2ED /* ComposeViewController.swift */,
-				19E05A1A1F16B0B30041061C /* UIView.swift */,
 			);
 			path = FrontPageMe;
 			sourceTree = "<group>";
@@ -117,6 +118,61 @@
 			path = "open-sans";
 			sourceTree = "<group>";
 		};
+		19E649861FAF62D300DF85A7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				191DF9061F1606460061A68D /* Assets.xcassets */,
+				196DFBFC1F16A2E20077F2ED /* open-sans */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		19E649871FAF62EA00DF85A7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				191DF9031F1606460061A68D /* Main.storyboard */,
+				191DF9081F1606460061A68D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		19E649881FAF630500DF85A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				19E05A1A1F16B0B30041061C /* UIView.swift */,
+				196DFC131F16A38A0077F2ED /* UIFont.swift */,
+				196DFBF81F1690130077F2ED /* ErrorDialog.swift */,
+				196DFBF61F168EC30077F2ED /* UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		19E649891FAF632F00DF85A7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				196DFBF41F168CFB0077F2ED /* CameraViewController.swift */,
+				196DFBFA1F16933B0077F2ED /* ComposeViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4B21A9D6E20EDED0BE1DEBC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4728F74868F5C67F6197E78C /* Pods-FrontPageMe.debug.xcconfig */,
+				673E399E657F58AE5A46B212 /* Pods-FrontPageMe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA1EFE1F8C0CD8338F4A7739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55710E29213F7FECF89E029C /* Pods_FrontPageMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,9 +180,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 191DF90E1F1606460061A68D /* Build configuration list for PBXNativeTarget "FrontPageMe" */;
 			buildPhases = (
+				ED5FADDB96F44234D1E0C7E2 /* [CP] Check Pods Manifest.lock */,
 				191DF8F81F1606450061A68D /* Sources */,
 				191DF8F91F1606450061A68D /* Frameworks */,
 				191DF8FA1F1606450061A68D /* Resources */,
+				8AD15846E52BB76A3426AF0E /* [CP] Embed Pods Frameworks */,
+				ABAA5D02858E61C83F287C6A /* [CP] Copy Pods Resources */,
+				19E649851FAF615700DF85A7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,6 +254,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19E649851FAF615700DF85A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3e94addfa1ab3575f34a18de6ea0dc3f7f9096fa b3ddc3e1d2e5688d458c630024ede6f06e33f5ab1d2dda927b4ce1da2b3b9a55";
+		};
+		8AD15846E52BB76A3426AF0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrontPageMe/Pods-FrontPageMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABAA5D02858E61C83F287C6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrontPageMe/Pods-FrontPageMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED5FADDB96F44234D1E0C7E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrontPageMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		191DF8F81F1606450061A68D /* Sources */ = {
@@ -329,6 +453,7 @@
 		};
 		191DF90F1F1606460061A68D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4728F74868F5C67F6197E78C /* Pods-FrontPageMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E8M3W83BER;
@@ -343,6 +468,7 @@
 		};
 		191DF9101F1606460061A68D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673E399E657F58AE5A46B212 /* Pods-FrontPageMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E8M3W83BER;
