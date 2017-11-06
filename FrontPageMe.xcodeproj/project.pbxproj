@@ -27,6 +27,9 @@
 		196DFC121F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 196DFC071F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf */; };
 		196DFC141F16A38A0077F2ED /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DFC131F16A38A0077F2ED /* UIFont.swift */; };
 		19E05A1B1F16B0B30041061C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E05A1A1F16B0B30041061C /* UIView.swift */; };
+		19E06BA81FB0DA26002F41BF /* ScreenSaverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E06BA71FB0DA26002F41BF /* ScreenSaverViewController.swift */; };
+		19E06BAA1FB0DA47002F41BF /* ScreenSaverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E06BA91FB0DA47002F41BF /* ScreenSaverCell.swift */; };
+		19E06BAD1FB0DB36002F41BF /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E06BAC1FB0DB36002F41BF /* ImageCache.swift */; };
 		19E6498B1FAF665700DF85A7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6498A1FAF665700DF85A7 /* UIColor.swift */; };
 		19E649901FAF685200DF85A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19E6498D1FAF685100DF85A7 /* Localizable.strings */; };
 		19E649921FAF69D500DF85A7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E649911FAF69D500DF85A7 /* StartViewController.swift */; };
@@ -56,6 +59,9 @@
 		196DFC071F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		196DFC131F16A38A0077F2ED /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		19E05A1A1F16B0B30041061C /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		19E06BA71FB0DA26002F41BF /* ScreenSaverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSaverViewController.swift; sourceTree = "<group>"; };
+		19E06BA91FB0DA47002F41BF /* ScreenSaverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSaverCell.swift; sourceTree = "<group>"; };
+		19E06BAC1FB0DB36002F41BF /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		19E6498A1FAF665700DF85A7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		19E6498E1FAF685100DF85A7 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		19E6498F1FAF685200DF85A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				19E649931FAF797300DF85A7 /* FrontPageMe.entitlements */,
+				19E06BAB1FB0DB13002F41BF /* ImageCache */,
 				19E649891FAF632F00DF85A7 /* Scenes */,
 				19E649881FAF630500DF85A7 /* Extensions */,
 				19E649871FAF62EA00DF85A7 /* Storyboards */,
@@ -126,6 +133,23 @@
 				196DFC071F16A2E20077F2ED /* OpenSans-SemiboldItalic.ttf */,
 			);
 			path = "open-sans";
+			sourceTree = "<group>";
+		};
+		19E06BA61FB0DA0C002F41BF /* Screen Saver */ = {
+			isa = PBXGroup;
+			children = (
+				19E06BA71FB0DA26002F41BF /* ScreenSaverViewController.swift */,
+				19E06BA91FB0DA47002F41BF /* ScreenSaverCell.swift */,
+			);
+			path = "Screen Saver";
+			sourceTree = "<group>";
+		};
+		19E06BAB1FB0DB13002F41BF /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				19E06BAC1FB0DB36002F41BF /* ImageCache.swift */,
+			);
+			path = ImageCache;
 			sourceTree = "<group>";
 		};
 		19E649861FAF62D300DF85A7 /* Assets */ = {
@@ -161,6 +185,7 @@
 		19E649891FAF632F00DF85A7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				19E06BA61FB0DA0C002F41BF /* Screen Saver */,
 				196DFBF41F168CFB0077F2ED /* CameraViewController.swift */,
 				196DFBFA1F16933B0077F2ED /* ComposeViewController.swift */,
 				19E649911FAF69D500DF85A7 /* StartViewController.swift */,
@@ -350,8 +375,11 @@
 				19E05A1B1F16B0B30041061C /* UIView.swift in Sources */,
 				191DF9001F1606460061A68D /* AppDelegate.swift in Sources */,
 				19E649921FAF69D500DF85A7 /* StartViewController.swift in Sources */,
+				19E06BAD1FB0DB36002F41BF /* ImageCache.swift in Sources */,
+				19E06BA81FB0DA26002F41BF /* ScreenSaverViewController.swift in Sources */,
 				19E6498B1FAF665700DF85A7 /* UIColor.swift in Sources */,
 				196DFBF91F1690130077F2ED /* ErrorDialog.swift in Sources */,
+				19E06BAA1FB0DA47002F41BF /* ScreenSaverCell.swift in Sources */,
 				196DFBF51F168CFB0077F2ED /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

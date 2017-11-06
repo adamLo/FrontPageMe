@@ -12,6 +12,7 @@ import AVFoundation
 class CameraViewController: UIViewController {
 
     @IBOutlet weak var shootButton: UIButton!
+    @IBOutlet weak var hintLabel: UILabel!
     
     let captureSession = AVCaptureSession()
     let stillImageOutput = AVCaptureStillImageOutput()
@@ -31,6 +32,7 @@ class CameraViewController: UIViewController {
         
         UIApplication.shared.isStatusBarHidden = true
         navigationController?.isNavigationBarHidden = true
+        hintLabel.text = NSLocalizedString("Make a photo of yourself!", comment: "Hint on camera screen")
     }
     
     override func viewDidAppear(_ animated: Bool) {

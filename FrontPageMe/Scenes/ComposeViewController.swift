@@ -39,6 +39,8 @@ class ComposeViewController: UIViewController {
         restartButton.isHidden = false
         finishedButton.isHidden = false
         
+        photoHintLabel.text = NSLocalizedString("You can drag, pinch and rotate the photo to adjust!", comment: "Hint label on composition screen")
+        
         setupButtons()
     }
     

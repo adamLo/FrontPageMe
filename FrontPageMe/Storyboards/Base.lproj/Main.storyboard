@@ -20,7 +20,7 @@
             <objects>
                 <navigationController id="zOU-6R-0mt" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qFS-hW-txF">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="48"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -44,7 +44,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your JOIN ultimate?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69V-be-fS0">
-                                <rect key="frame" x="130" y="144" width="508" height="51.5"/>
+                                <rect key="frame" x="130" y="148" width="508" height="51.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -129,13 +129,13 @@ your own TIME cover.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a photo of yourself!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXf-EV-Vnf">
-                                <rect key="frame" x="201" y="124" width="366" height="41"/>
+                                <rect key="frame" x="201" y="128" width="366" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdY-k5-Qhb" userLabel="Back Button">
-                                <rect key="frame" x="20" y="64" width="50" height="50"/>
+                                <rect key="frame" x="20" y="68" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Gyc-IM-n2z"/>
                                     <constraint firstAttribute="height" constant="50" id="ech-oI-dlj"/>
@@ -162,6 +162,7 @@ your own TIME cover.</string>
                     </view>
                     <navigationItem key="navigationItem" id="jpD-dJ-gUv"/>
                     <connections>
+                        <outlet property="hintLabel" destination="OXf-EV-Vnf" id="UT1-Y1-EVV"/>
                         <outlet property="shootButton" destination="FE9-p0-3p2" id="r3I-fG-NSZ"/>
                         <segue destination="3S7-sM-uQy" kind="show" identifier="compose" id="vje-XX-ga0"/>
                     </connections>
@@ -169,6 +170,74 @@ your own TIME cover.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="29.6875" y="52.734375"/>
+        </scene>
+        <!--Screen Saver View Controller-->
+        <scene sceneID="v5n-kY-fzi">
+            <objects>
+                <viewController storyboardIdentifier="ScreenSaverViewController" id="n2y-eC-f8e" customClass="ScreenSaverViewController" customModule="FrontPageMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KTC-gP-bOg"/>
+                        <viewControllerLayoutGuide type="bottom" id="t19-r8-jBk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L2V-JB-LgW">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="m85-cu-e2S">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" red="1" green="0.43988207309999999" blue="0.22796849199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="oF2-Tj-w9b">
+                                    <size key="itemSize" width="153" height="256"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScreenSaverCell" id="8jf-QE-Yrf" customClass="ScreenSaverCell" customModule="FrontPageMe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="256"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="153" height="256"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="44I-yP-GZX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="153" height="256"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="44I-yP-GZX" secondAttribute="trailing" id="MRG-1K-Zi4"/>
+                                            <constraint firstItem="44I-yP-GZX" firstAttribute="leading" secondItem="8jf-QE-Yrf" secondAttribute="leading" id="U8o-40-sqK"/>
+                                            <constraint firstItem="44I-yP-GZX" firstAttribute="top" secondItem="8jf-QE-Yrf" secondAttribute="top" id="VFX-fo-7uV"/>
+                                            <constraint firstAttribute="bottom" secondItem="44I-yP-GZX" secondAttribute="bottom" id="cJB-PJ-3ym"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="photoImageView" destination="44I-yP-GZX" id="pYh-nq-esR"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="n2y-eC-f8e" id="UPv-gO-Vii"/>
+                                    <outlet property="delegate" destination="n2y-eC-f8e" id="x1D-WO-D1a"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m85-cu-e2S" secondAttribute="trailing" id="KWS-Mj-QCU"/>
+                            <constraint firstItem="m85-cu-e2S" firstAttribute="leading" secondItem="L2V-JB-LgW" secondAttribute="leading" id="Usm-Uu-cKh"/>
+                            <constraint firstItem="t19-r8-jBk" firstAttribute="top" secondItem="m85-cu-e2S" secondAttribute="bottom" id="f0i-Zj-Nn8"/>
+                            <constraint firstItem="m85-cu-e2S" firstAttribute="top" secondItem="L2V-JB-LgW" secondAttribute="top" id="ucL-CV-RA9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoCollectionView" destination="m85-cu-e2S" id="yFn-dx-fGt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lnk-dT-ehE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="766"/>
         </scene>
         <!--Compose View Controller-->
         <scene sceneID="QoH-l6-e1e">

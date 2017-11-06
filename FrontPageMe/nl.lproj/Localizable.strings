@@ -18,3 +18,10 @@
 
 /* Success message title when saved photo */
 "Photo saved! Thank you!" = "Foto opgeslagen! Dank je!";
+
+/* Hint on camera screen */
+"Make a photo of yourself!" = "Make a photo of yourself!";
+
+/* Hint label on composition screen */
+"You can drag, pinch and rotate the photo to adjust!" = "You can drag, pinch and rotate the photo to adjust!";
+
